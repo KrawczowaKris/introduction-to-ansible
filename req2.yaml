@@ -10,7 +10,7 @@
         parents: ip access-list extended REQ2
         lines:
           - 10 permit icmp host 192.168.20.20 host 192.168.10.10
-          - 20 permit icmp 192.168.20.20 any
+          - 20 permit icmp host 192.168.20.20 any
           - 30 deny icmp any any
           - 40 permit ip any any
 
